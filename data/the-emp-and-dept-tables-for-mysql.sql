@@ -40,3 +40,39 @@ INSERT INTO dept VALUES ('10','ACCOUNTING','NEW YORK');
 INSERT INTO dept VALUES ('20','RESEARCH','DALLAS');
 INSERT INTO dept VALUES ('30','SALES','CHICAGO');
 INSERT INTO dept VALUES ('40','OPERATIONS','BOSTON');
+
+DROP TABLE IF EXISTS emp_bonus;
+
+CREATE TABLE emp_bonus (
+  empno decimal(4,0) default NULL,
+  received date default NULL,
+  type decimal(1,0) default NULL
+);
+
+INSERT INTO emp_bonus VALUES ('7369','2005-03-14','1');
+INSERT INTO emp_bonus VALUES ('7900','2005-03-14','2');
+INSERT INTO emp_bonus VALUES ('7788','2005-03-14','3');
+
+DROP TABLE IF EXISTS emp_bonus2;
+
+CREATE TABLE emp_bonus2 (
+  empno decimal(4,0) default NULL,
+  received date default NULL,
+  type decimal(1,0) default NULL
+);
+
+INSERT INTO emp_bonus2 VALUES ('7934','2005-03-17','1');
+INSERT INTO emp_bonus2 VALUES ('7934','2005-02-15','2');
+INSERT INTO emp_bonus2 VALUES ('7839','2005-02-15','3');
+INSERT INTO emp_bonus2 VALUES ('7782','2005-02-15','1');
+
+DROP TABLE IF EXISTS emp_bonus3;
+
+CREATE TABLE emp_bonus3 (
+  empno decimal(4,0) default NULL,
+  received date default NULL,
+  type decimal(1,0) default NULL
+);
+
+INSERT INTO emp_bonus3 VALUES ('7934','2005-03-17','1');
+INSERT INTO emp_bonus3 VALUES ('7934','2005-02-15','2');
